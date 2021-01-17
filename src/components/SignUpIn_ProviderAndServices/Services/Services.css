@@ -1,0 +1,36 @@
+/*Style for Services Form*/
+.butConteiner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 100px;
+    font-family: Vollko, cursive;
+    font-size: 20px;
+    color: white;
+}
+
+.listContainer ul{
+    list-style: none;
+    padding: 20px;
+}
+
+.listContainer ul li{
+    padding: 10px;
+    font-family: Vollko, cursive;
+    font-size: 20px;
+    color: white;
+}
+
+#formContentServices {
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    background: #fff;
+    padding: 30px;
+    width: 100%;
+    height: fit-content;
+    max-width: fit-content;
+    position: relative;
+    padding: 30px;
+    -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+    background-color: #253053;
+}
