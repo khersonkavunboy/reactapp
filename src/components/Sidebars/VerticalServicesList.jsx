@@ -1,8 +1,6 @@
 import React from 'react'
 import "./VerticalServices.css"
-import {DataVerticalServices} from "../Data/DataVerticalServices"
-
-
+import {DataVerticalServices} from "../../Data/DataVerticalServices.js"
 
 export default function VerticalServicesList(){
     return(
