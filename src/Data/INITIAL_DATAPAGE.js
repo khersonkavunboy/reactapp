@@ -31,19 +31,19 @@ export const INITIAL_DATAPAGE = {
         { id:21, idCategory:1, nameSentence:"Doc2", picture:photo},
         { id:22, idCategory:1, nameSentence:"Doc3", picture:photo},
 
-        { id:8, idCategory:2, nameSentence:"Армия", picture:photo},
-        { id:9, idCategory:2, nameSentence:"Армия2", picture:photo},
-        { id:10, idCategory:2, nameSentence:"Армия3", picture:photo},
+        { id:8, idCategory:2, nameSentence:"Что-то1", picture:photo},
+        { id:9, idCategory:2, nameSentence:"Что-то2", picture:photo},
+        { id:10, idCategory:2, nameSentence:"Что-то3", picture:photo},
 
-        { id:11, idCategory:3, nameSentence:"efewfwef", picture:photo},
-        { id:12, idCategory:3, nameSentence:"wefewfewf", picture:photo},
+        { id:11, idCategory:3, nameSentence:"Что-то1", picture:photo},
+        { id:12, idCategory:3, nameSentence:"Что-то2", picture:photo},
 
-        { id:13, idCategory:4, nameSentence:"weyruwer", picture:photo},
-        { id:14, idCategory:4, nameSentence:"uiorewuruweo", picture:photo},
-        { id:15, idCategory:4, nameSentence:"jewfj", picture:photo},
+        { id:13, idCategory:4, nameSentence:"Что-то3", picture:photo},
+        { id:14, idCategory:4, nameSentence:"Что-то4", picture:photo},
+        { id:15, idCategory:4, nameSentence:"Что-то6", picture:photo},
 
-        { id:16, idCategory:5, nameSentence:"ewnfkjwe", picture:photo},
-        { id:17, idCategory:5, nameSentence:"ewkfnwekj", picture:photo},
+        { id:16, idCategory:5, nameSentence:"Что-то123", picture:photo},
+        { id:17, idCategory:5, nameSentence:"Что-то213", picture:photo},
     ],
     "topsales":[
         {idTopSales:1, titleTopSales:"Hello", picture: photo2},
@@ -66,7 +66,26 @@ export const INITIAL_DATAPAGE = {
         { id:2, src: image2 },
         { id:3, src: image3 },
         { id:4, src: image1 }
+    ],
+
+    "columns":[
+        { field: 'id', headerName: 'ID', width: 70 },
+        { field: 'dateTime', headerName: 'Date Time', width: 250 },
+        { field: 'fullName', headerName: 'Client fullname', width: 200 },
+        { field: 'numberPhone', headerName: 'Telephone number', type: 'number', width: 200 },
+        { field: 'service', headerName: 'Service', type: 'text', width: 200 },
+        { field: 'duration', headerName: 'Duration', type: 'text', width: 200 },
+    ],
+    "dataRowsClient" :[
+        { id: 1, fullName: 'Snow Snow', numberPhone: '382282842871', dateTime: Date.now(), service:"Боулинг", duration:'1 hours' },
+    ],
+    "dataRowsProvider":[
+        { id: 1, fullName: 'Snow Snow', numberPhone: '382282842871', dateTime: Date.now(), service:"Боулинг", duration:'1 hours' },
+        { id: 2, fullName: 'Snow Snow', numberPhone: 'wefnlkewnflkwen', dateTime: Date.now(), service:"Боулинг", duration:'1 hours' },
+        { id: 3, fullName: 'Snow Snow', numberPhone: '382282842871', dateTime: Date.now(), service:"Боулинг", duration:'1 hours' },
+        { id: 4, fullName: 'Snow Snow', numberPhone: '382282842871', dateTime: Date.now(), service:"Боулинг", duration:'1 hours' },
     ]
+
 
 };
 

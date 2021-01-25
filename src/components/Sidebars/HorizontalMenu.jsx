@@ -17,7 +17,7 @@ export const HorizontalMenu = () => {
             <ul className={state ? 'nav-menu active' : 'nav-menu'}>
                 <li>
                     <NavLink className="nav-links" exact to={"/Provider"}>Provider</NavLink>
-                    <NavLink className="nav-links" to={"/Client"}>Client</NavLink>
+                    <NavLink className="nav-links" to={"/PagesViewClient"}>View data client</NavLink>
                     <NavLink className="nav-links" to={"/PagesViewProvider"}>View data provider</NavLink>
                 </li>
             </ul>

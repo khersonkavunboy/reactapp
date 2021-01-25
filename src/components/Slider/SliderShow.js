@@ -6,20 +6,30 @@ import "./SliderShow.css";
 
 
 export const SliderShow = (props) => {
-
-  const Arrow = (props => {
-    const { className, style, onClick } = props;
+  const Arrow = props => {
+    const {className, style, onClick} = props;
     return (
-      <div
-        className={className}
-        style={{ ...style, display: "block", backgroundColor:"red" }}
-        onClick={onClick}
-      />
-    );
-  })
+        <div
+            className={className}
+            style={
+              {
+                ...style,
+                display: "block",
+                backgroundColor: "blue",
+                borderRadius: 25,
+                width: 26,
+                height: 25,
+                border: '1px solid blue',
+                boxShadow: '0 0 10px blue'
+              }
+            }
+            onClick={onClick}
+        />
+    )
+  };
 
 
-  var settings = {
+  const settings = {
     dots: true,
     infinite: true,
     slidesToShow: 1,
@@ -27,21 +37,22 @@ export const SliderShow = (props) => {
     autoplay: true,
     autoplaySpeed: 2000,
     pauseOnHover: true,
-    nextArrow: <Arrow/>,
-    prevArrow: <Arrow/>
+    nextArrow: <Arrow />,
+    prevArrow: <Arrow />
   };
-
 
     return (
       <div className="sliderContent">
         <Slider {...settings}>
             {
                 props.pictures.map((element, key) => (
-                    <img key={key} src={element.src} alt='phot'/>
+                    <img key={key} src={element.src} alt='picture'/>
                 ))
             }
         </Slider>
       </div>
     );
-  
-}
+};
+
+
+
