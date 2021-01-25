@@ -1,0 +1,50 @@
+.divBlock{
+    width: 250px;
+    height: 150px;
+    border: 1px solid blue;
+    border-radius: 10px;
+    -moz-box-shadow:0 0 10px blue;
+    -webkit-box-shadow:0 0 10px blue;
+    box-shadow:0 0 10px blue;
+    margin-bottom: 50px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.divBlock:nth-child(5n) {
+    page-break-after: always;
+}
+
+
+.imageSize{
+    width: 170px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.divBlockSentense{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 50px;
+}
+
+.divTitle{
+    margin-top: 20px;
+    font-family: Vollko, cursive;
+    font-size: 30px;
+    text-align: center;
+    -moz-text-shadow:0 0 5px black;
+    -webkit-text-shadow:0 0 5px black;
+    text-shadow:0 0 5px black;
+}
+
+.text{
+    font-family: Vollko, cursive;
+    text-align: center;
+    font-size: 20px;
+    -moz-text-shadow:0 0 5px black;
+    -webkit-text-shadow:0 0 5px black;
+    text-shadow:0 0 5px black;
+}

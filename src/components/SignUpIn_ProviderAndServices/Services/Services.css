@@ -1,4 +1,4 @@
-/*Style for Services Form*/
+/*Style for ShowServices Form*/
 .butConteiner{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -14,6 +14,9 @@
 }
 
 .listContainer ul li{
+    display: grid;
+    grid-template-columns: 3fr 0fr 0fr;
+    grid-gap: 10px;
     padding: 10px;
     font-family: Vollko, cursive;
     font-size: 20px;
@@ -30,7 +33,28 @@
     max-width: fit-content;
     position: relative;
     padding: 30px;
-    -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
-    box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
     background-color: #253053;
+
+
+    /* animation-duration: 1.5s;
+    animation-name: slidein;
+    animation-iteration-count: 1;
+    transition: all 2s ease-in;
+    -webkit-transition: all 2s ease-in;
+    -moz-transition: all 2s ease-in;
+    -o-transition: all 2s ease-in; */
+}
+
+@keyframes slidein {
+    from {
+        margin-right: -100%;
+        width: 100%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
 }

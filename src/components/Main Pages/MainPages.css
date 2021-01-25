@@ -1,0 +1,17 @@
+.flexConteinerRow{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flexConteinerColumn{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1100px;
+}
+
+.flexConteinerColumn > div{
+    margin: 30px 0px 50px 50px;
+}

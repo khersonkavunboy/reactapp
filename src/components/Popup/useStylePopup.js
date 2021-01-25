@@ -4,7 +4,10 @@ export const useStylePopup = makeStyles((theme) => ({
     root: {
         margin: 0,
         padding: theme.spacing(1),
-        fontFamily: 'Vollko',
+        fontFamily: [
+            'Vollko',
+            'cursive',
+        ].join(','),
         color:"black"
     },
     closeButton: {

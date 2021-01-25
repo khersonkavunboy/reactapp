@@ -1,22 +1,67 @@
-import React  from 'react';
+import React, {useState} from 'react';
+import Button from "@material-ui/core/Button";
+import {addProvider} from "../../context/signup/signUpState";
+
+const INITIAL_STATE_PROVIDER = {
+    nameCompany: '',
+    address: '',
+    numberPhone: '',
+    email: '',
+    password: '',
+    fromHourse: '',
+    toHourse: ''
+};
 
 export const SignUp = () => {
+    const [provider, setProvider] = useState(INITIAL_STATE_PROVIDER);
+    const {nameCompany, address, numberPhone, email, password, fromHourse, toHourse} = provider;
+    const onInputChange = e => setProvider({...provider, [e.target.name]: e.target.value});
+
+    const onSubmit = async e => {
+        try {
+            e.preventDefault();
+            addProvider(provider)
+        } catch (e) {
+            console.log(e);
+        }
+    };
+
     return (
-        <div>
-        <div className="box1">
-            <form>
-                <input type="text" className="fadeIn second" name="nameCompany" placeholder="Enter name company"/>
-                <input type="text" className="fadeIn second" name="address" placeholder="Enter address"/>
-                <input type="text" className="fadeIn second" name="type" placeholder="Enter type"/>
-                <div className="form-group fadeIn second">
-                    <input type="text" name="fromHours" placeholder="Working from hours"/>
-                    <input type="text" name="toHours" placeholder="Working to hours"/>
+        <form onSubmit={e => onSubmit(e)}>
+            <div>
+                <input id="nameCompany" placeholder="Enter name company" value={nameCompany} type="text"
+                       name="nameCompany" onChange={e => onInputChange(e)}/>
+            </div>
+            <div>
+                <input id="address" placeholder="Enter address" name="address" value={address} type="text"
+                       onChange={e => onInputChange(e)}/>
+            </div>
+            <div>
+                <input id="numberPhone" placeholder="Enter number phone" name="numberPhone" value={numberPhone}
+                       type="text" onChange={e => onInputChange(e)}/>
+            </div>
+
+            <div className="divHoursContent">
+                <div>
+                    <input type="text" name="fromHourse" value={fromHourse} placeholder="Working from hours"
+                           onChange={e => onInputChange(e)}/>
                 </div>
-                <input type="email" className="fadeIn second" name="email" placeholder="Enter email"/>
-                <input type="password" className="fadeIn second" name="password" placeholder="Enter password"/>
-                <input type="submit" className="fadeIn second" value="Sign Up"/>
-            </form>
-        </div>
-        </div>
-    )
-}
+                <div>
+                    <input type="text" name="toHourse" value={toHourse} placeholder="Working to hours"
+                           onChange={e => onInputChange(e)}/>
+                </div>
+            </div>
+            <div>
+                <input id="email" placeholder="Enter email" name="email" value={email} type="email"
+                       onChange={e => onInputChange(e)}/>
+            </div>
+            <div>
+                <input id="password" placeholder="Enter password" name="password" value={password} type="password"
+                       onChange={e => onInputChange(e)}/>
+            </div>
+            <div>
+                <Button variant="contained" size="large" color="primary" style={{width: 250, height: 50, marginTop: 10}} type="submit">SIGN UP</Button>
+            </div>
+        </form>
+    );
+};

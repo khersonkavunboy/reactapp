@@ -1,0 +1,140 @@
+{
+  "providers": [
+    {
+      "id": 1,
+      "nameCompany": "json-server",
+      "address": "typicode1",
+      "numberPhone": "111-111-111",
+      "email": "vit@gmail.com",
+      "password": "123456",
+      "fromHourse": "06:00",
+      "toHourse": "12:00"
+    },
+    {
+      "id": 2,
+      "nameCompany": "json-server",
+      "address": "typicode1",
+      "numberPhone": "111-111-111",
+      "email": "vit@gmail.com",
+      "password": "123456",
+      "fromHourse": "06:00",
+      "toHourse": "12:00"
+    },
+    {
+      "id": 3,
+      "nameCompany": "json-server",
+      "address": "typicode1",
+      "numberPhone": "111-111-111",
+      "email": "vit@gmail.com",
+      "password": "123456",
+      "fromHourse": "06:00",
+      "toHourse": "12:00"
+    },
+    {
+      "nameCompany": "erhreh",
+      "address": "reger",
+      "numberPhone": "234324",
+      "email": "12321@gmail.com",
+      "password": "213",
+      "fromHourse": "12:00",
+      "toHourse": "16:00",
+      "id": 4
+    },
+    {
+      "nameCompany": "erhreh",
+      "address": "reger",
+      "numberPhone": "234324",
+      "email": "12321@gmail.com",
+      "password": "213",
+      "fromHourse": "12:00",
+      "toHourse": "16:00",
+      "id": 5
+    },
+    {
+      "nameCompany": "wefwef",
+      "address": "reger",
+      "numberPhone": "234324",
+      "email": "vnov29@gmail.com",
+      "password": "12321412",
+      "fromHourse": "12:00",
+      "toHourse": "18:00",
+      "id": 6
+    },
+    {
+      "nameCompany": "kgnerk",
+      "address": "ernkgnerlkg",
+      "numberPhone": "ewfewfwefewf ",
+      "email": "eewf@gge.ewfwe",
+      "password": "ewfnwekf",
+      "fromHourse": "ewmnwem",
+      "toHourse": "emgn em,rgerg",
+      "type": "g",
+      "fromHours": "g",
+      "id": 7
+    },
+    {
+      "nameCompany": "2132132",
+      "address": "12312312",
+      "numberPhone": "213213213",
+      "email": "3213213@gmail.com",
+      "password": "213123",
+      "fromHourse": "21321312",
+      "toHourse": "2131232",
+      "id": 8
+    },
+    {
+      "nameCompany": "ewknweln",
+      "address": "weklfnwekl",
+      "numberPhone": "klewnfkln",
+      "email": "ewgnkewlkgn@g.c",
+      "password": "kewnglknweg",
+      "fromHourse": "klnewklgnwelk",
+      "toHourse": "ekwgnewlkgn",
+      "id": 9
+    }
+  ],
+  "services": [
+    {
+      "id": 15,
+      "nameService": "wefjbwejfk2123",
+      "duration": "jbewfjkewb",
+      "price": "bewjkfb"
+    },
+    {
+      "id": 16,
+      "nameService": "fewjkfewbewfwefe243",
+      "duration": "jkfebfwejkb",
+      "price": "jkbfewjfbe"
+    },
+    {
+      "id": 17,
+      "nameService": "efjkwebfwfqwq",
+      "duration": "newlkfnw",
+      "price": "nkelwfwkel"
+    },
+    {
+      "id": 18,
+      "nameService": "efjkwebf1232",
+      "duration": "newlkfnw",
+      "price": "nkelwfwkel"
+    },
+    {
+      "id": 19,
+      "nameService": "wfnwejfkn21232",
+      "duration": "newlfnewlk",
+      "price": "newkfnlewfkl"
+    },
+    {
+      "id": 20,
+      "nameService": "ewfnejwkf123123n",
+      "duration": "enwkfewklf",
+      "price": "ewflkn"
+    },
+    {
+      "id": 21,
+      "nameService": "ewfnjew213123ewfewf",
+      "duration": "knewlfnwlk",
+      "price": "newlkfnwekl"
+    }
+  ]
+}

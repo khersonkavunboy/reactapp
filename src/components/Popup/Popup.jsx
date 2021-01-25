@@ -11,14 +11,14 @@ export const Popup = (props) => {
     const classes = useStylePopup();
 
     return (
-        <Dialog open={ openPopup } onBackdropClick={ () => setOpenPopup(false) }>
+        <Dialog open={ openPopup } onBackdropClick={ () => setOpenPopup(false) } onEscapeKeyDown={ () => setOpenPopup(false)  }>
             <DialogTitle>
                 <div>
-                    <Typography variant="h6" className={classes.root}>{title}</Typography>
+                    <Typography variant="h4" className={classes.root}>{title}</Typography>
                     <Button variant="contained" color="secondary" className={classes.closeButton} onClick={ () => setOpenPopup(false) }><CloseIcon/></Button>
                 </div>
             </DialogTitle>
-            <DialogContent dividers>{children}</DialogContent>
+            <DialogContent dividers >{children}</DialogContent>
         </Dialog>
     );
 };
