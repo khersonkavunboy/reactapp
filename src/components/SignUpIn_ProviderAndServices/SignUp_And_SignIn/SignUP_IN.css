@@ -134,7 +134,7 @@ input[type=button]:active, input[type=submit]:active, input[type=reset]:active  
     transform: scale(0.95);
 }
 
-input[type=text], input[type=password], input[type=email], input[type=date], input[type=telephone], input[type=datetime-local]   {
+input[type=text], input[type=password], input[type=email], input[type=date], input[type=telephone], input[type=datetime-local],input[type=time]   {
     background-color: #f6f6f6;
     border: none;
     color: #0d0d0d;
@@ -248,7 +248,17 @@ input[type=text]:placeholder {
 
 .divHoursContent {
     display:flex;
-    width: auto;
-    margin-left: 5px;
-    margin-right: 22px;
+    flex-direction: row;
+    color:white;
+    font-size: 20px;
+    margin: 5px;
+}
+
+.divHoursContent > div{
+    width: 236px;
+}
+
+.titleHours{
+    color:white;
+    font-size: 20px;
 }
