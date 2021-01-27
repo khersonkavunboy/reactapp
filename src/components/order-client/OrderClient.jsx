@@ -18,7 +18,7 @@ export const OrderClient = () => {
     const onSubmit = async e => {
         try {
             e.preventDefault();
-            //addProvider(provider)
+            //addProvider(provider-component)
         } catch (e) {
             console.log(e);
         }

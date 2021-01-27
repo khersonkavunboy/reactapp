@@ -1,5 +1,5 @@
 import React from 'react';
-import DataTable from "../GridTable/GridTable";
+import DataTable from "../grid-table/GridTable";
 import "./PagesViewProvider.css"
 
 

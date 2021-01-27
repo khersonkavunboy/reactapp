@@ -10,6 +10,4 @@ export const SignUpInput = (props) => {
                    name={name} onChange={onChange}/>
         </div>
     )
-
-
 };

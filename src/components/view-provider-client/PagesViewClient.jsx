@@ -1,14 +1,14 @@
 import React from 'react';
-import Button from "@material-ui/core/Button";
 import {GroupDataProviderOrClient} from "./GroupDataProviderOrClient";
+import Button from "@material-ui/core/Button";
+import {INITIAL_DATAPAGE} from "../../data/INITIAL_DATAPAGE";
 import {ValueFormatterParams} from "@material-ui/data-grid";
-import {INITIAL_DATAPAGE} from "../../Data/INITIAL_DATAPAGE";
 
 
 const deleteOrderCustomer = e => {
     try{
         console.log("Params", e.row);
-        INITIAL_DATAPAGE.dataRowsProvider.filter(item=> item.id !== e.row.id);
+        INITIAL_DATAPAGE.dataRowsClient.filter(item => item.id !== e.row.id);
     }catch (e){
         console.log(e.message());
     }
@@ -19,14 +19,13 @@ const columns = [
     {
         field: "", headerName: "Function", sortable: false, width: 200, disableClickEventBubbling: true,
         renderCell:(params : ValueFormatterParams) => (
-            <Button variant="contained" color="secondary" onClick={()=>deleteOrderCustomer(params)}>Cancel order</Button>
+        <Button variant="contained" color="secondary" onClick={()=>deleteOrderCustomer(params)}>Cancel order</Button>
         )
     }
 ];
 
-export const PagesViewProvider = () => {
+export const PagesViewClient = () =>{
     return (
-        <GroupDataProviderOrClient title="Provider dashboard" rows={INITIAL_DATAPAGE.dataRowsProvider} columns={columns}/>
+        <GroupDataProviderOrClient title="Customer orders" rows={INITIAL_DATAPAGE.dataRowsClient} columns={columns} />
     )
 };
-

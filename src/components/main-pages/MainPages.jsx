@@ -1,8 +1,8 @@
 import React from 'react'
-import VerticalServicesList from "../Sidebars/VerticalServicesList";
-import {SliderShow}  from "../Slider/SliderShow.js";
-import {RecomendationOrTopSales} from "../RecomendationsOrTopSales/RecomendationOrTopSales"
-import {INITIAL_DATAPAGE} from "../../Data/INITIAL_DATAPAGE";
+import VerticalServicesList from "../sidebars/VerticalServicesList";
+import {SliderShow}  from "../slider/SliderShow.js";
+import {RecomendationOrTopSales} from "../recomendations-topsales/RecomendationOrTopSales"
+import {INITIAL_DATAPAGE} from "../../data/INITIAL_DATAPAGE";
 import "./MainPages.css"
 
 export const MainPages = () =>{

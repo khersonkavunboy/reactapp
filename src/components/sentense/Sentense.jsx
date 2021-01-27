@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
-import {BlockSentense} from "../BlockSentense/BlockSentense";
-import {Popup} from "../Popup/Popup";
-import {OrderClient} from "../Order page client/OrderClient";
-import {INITIAL_DATAPAGE} from "../../Data/INITIAL_DATAPAGE";
+import {BlockSentense} from "../block-sentense/BlockSentense";
+import {Popup} from "../popup/Popup.jsx";
+import {OrderClient} from "../order-client/OrderClient";
+import {INITIAL_DATAPAGE} from "../../data/INITIAL_DATAPAGE";
 import "./Sentense.css"
 
 export const Sentense = () => {

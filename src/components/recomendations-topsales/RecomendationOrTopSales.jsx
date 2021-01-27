@@ -1,5 +1,5 @@
 import React from 'react'
-import {BlockSentense} from "../BlockSentense/BlockSentense"
+import {BlockSentense} from "../block-sentense/BlockSentense"
 import "./RecomendationOrTopSales.css"
 
 

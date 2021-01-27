@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
-import {SignUp} from "../SignUpIn_ProviderAndServices/SignUp_And_SignIn/SignUp.jsx";
-import { SignIn } from "../SignUpIn_ProviderAndServices/SignUp_And_SignIn/SignIn.jsx";
+import {SignUp} from "../sign-up-in-provider/SignUp.jsx";
+import { SignIn } from "../sign-up-in-provider/SignIn.jsx";
 import {NavLink} from "react-router-dom";
-import logo from "../SignUpIn_ProviderAndServices/SignUp_And_SignIn/logo512.png";
-import "../SignUpIn_ProviderAndServices/SignUp_And_SignIn/SignUP_IN.css";
-import {Services} from "../SignUpIn_ProviderAndServices/Services/Services";
+import logo from "../sign-up-in-provider/logo512.png";
+import "../sign-up-in-provider/SignUP_IN.css";
+import {Services} from "../services-component/Services";
 
 export const Provider = () => {
     const [state, setState] = useState(false);

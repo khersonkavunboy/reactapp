@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import Button from "@material-ui/core/Button";
-import {addProvider} from "../../context/signup/signUpState";
+import {addProvider} from "../context/signup/signUpState.js";
 import {SignUpInput} from "./SignUpInput";
 
 const INITIAL_STATE_PROVIDER = {
@@ -22,7 +22,7 @@ export const SignUp = () => {
         try {
             e.preventDefault();
             console.log(provider);
-            // addProvider(provider)
+            // addProvider(provider-component)
         } catch (e) {
             console.log(e);
         }

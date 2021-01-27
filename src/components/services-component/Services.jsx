@@ -2,11 +2,11 @@ import React, {useContext, useEffect, useState} from 'react'
 import Button from '@material-ui/core/Button';
 import AddIcon from '@material-ui/icons/Add';
 import "./Services.css"
-import {Popup} from "../../Popup/Popup";
+import {Popup} from "../popup/Popup";
 import {AddEditService} from "./AddEditService";
 import CloseIcon from "@material-ui/icons/Close";
 import EditIcon from "@material-ui/icons/Edit";
-import {Contexts} from "../../context/contexts";
+import {Contexts} from "../context/contexts";
 
 export const Services = () => {
     const [openPopup, setOpenPopup] = useState(false);
