@@ -36,15 +36,6 @@
     -webkit-box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
     box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
     background-color: #253053;
-
-
-    /* animation-duration: 1.5s;
-    animation-name: slidein;
-    animation-iteration-count: 1;
-    transition: all 2s ease-in;
-    -webkit-transition: all 2s ease-in;
-    -moz-transition: all 2s ease-in;
-    -o-transition: all 2s ease-in; */
 }
 
 @keyframes slidein {
@@ -54,7 +45,7 @@
     }
 
     to {
-        margin-left: 0%;
+        margin-left: 0;
         width: 100%;
     }
 }
