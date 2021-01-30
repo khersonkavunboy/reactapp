@@ -2,8 +2,8 @@ import React, {useState} from 'react';
 import {SignUp} from "../sign-up-in-provider/SignUp.jsx";
 import { SignIn } from "../sign-up-in-provider/SignIn.jsx";
 import {NavLink} from "react-router-dom";
-import logo from "../sign-up-in-provider/logo512.png";
-import "../sign-up-in-provider/SignUP_IN.css";
+import logo from "../pictures/logo512.png";
+import "../sign-up-in-provider/styles-sign-up-in.css";
 import {Services} from "../services-component/Services";
 
 export const Provider = () => {

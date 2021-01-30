@@ -1,10 +1,10 @@
 import React from 'react';
 import CategoryIcon from '@material-ui/icons/Category';
-import photo1 from "../components/recomendations-topsales/60235744.gif";
-import photo2 from "../components/recomendations-topsales/instagram-new.png";
-import image1 from '../components/slider/ca262e0354eea311c41134c3e4bc3bc2.gif';
-import image2 from '../components/slider/225957874.png';
-import image3 from '../components/slider/Web-Banner-(1000-px-wide-and-300px-high).jpg';
+import photo1 from "../components/pictures/60235744.gif";
+import photo2 from "../components/pictures/instagram-new.png";
+import image1 from '../components/pictures/ca262e0354eea311c41134c3e4bc3bc2.gif';
+import image2 from '../components/pictures/225957874.png';
+import image3 from '../components/pictures/Web-Banner-(1000-px-wide-and-300px-high).jpg';
 
 
 
@@ -64,7 +64,8 @@ export const INITIAL_DATAPAGE = {
         { id:1, src: image1 },
         { id:2, src: image2 },
         { id:3, src: image3 },
-        { id:4, src: image1 }
+        { id:4, src: image1 },
+        // { id:4, src: 'https://www.uaewave.com/wp-content/uploads/2019/05/IMG-Worlds-of-Adventure-Dubai-Landmarks.jpg' },
     ],
 
     "columns":[

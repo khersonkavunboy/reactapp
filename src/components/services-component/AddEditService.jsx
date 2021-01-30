@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import Button from "@material-ui/core/Button";
-import "./AddEditService.css"
+import "./styles-add-edit-service.css"
 
 const INITIAL_SERVICE = {
     id:0,

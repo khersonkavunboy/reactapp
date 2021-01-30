@@ -1,6 +1,6 @@
 import {makeStyles} from "@material-ui/core";
 
-export const useStylePopup = makeStyles((theme) => ({
+export const makeStylesPopup = makeStyles((theme) => ({
     root: {
         margin: 0,
         padding: theme.spacing(1),

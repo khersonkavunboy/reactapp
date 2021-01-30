@@ -4,11 +4,11 @@ import DialogContent from "@material-ui/core/DialogContent";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import CloseIcon from "@material-ui/icons/Close";
-import {useStylePopup} from "./useStylePopup";
+import {makeStylesPopup} from "./makeStylesPopup";
 
 export const Popup = (props) => {
     const {title, children, openPopup, setOpenPopup} = props;
-    const classes = useStylePopup();
+    const classes = makeStylesPopup();
 
     return (
         <Dialog open={ openPopup } onBackdropClick={ () => setOpenPopup(false) } onEscapeKeyDown={ () => setOpenPopup(false)  }>

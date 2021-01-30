@@ -34,12 +34,58 @@
 }
 
 .row #icon{
-    flex: 30%;
+    flex: 15%;
     display: grid;
     place-items: center;
 }
 
 .row #title{
-    flex: 70%;
+    flex: 85%;
     color:white;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .verticalMenu{
+        height: auto;
+        width: auto;
+        margin: 20px 0 0 0;
+    }
+
+    .SidebarList .row{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .row #title{
+        font-size: 25px;
+        color:white;
+    }
+
+    .row #icon{
+        display: none;
+    }
+}
+
+@media (min-width:1600px){
+    .verticalMenu{
+        height: 100%;
+        width: auto;
+        margin: 30px 30px 30px 70px;
+    }
+
+    .SidebarList .row{
+        margin-top: 5%;
+        margin-bottom: 100px;
+        font-size: 30px;
+    }
+
+    .SidebarList .row:hover {
+        height:70px
+    }
+
+
 }

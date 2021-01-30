@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 export const BlockSentense = (props) => {
     const {text, picture, onClick, divStyleClass, imgStyleClass, paragraphStyleClass} = props;

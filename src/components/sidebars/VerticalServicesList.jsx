@@ -1,7 +1,7 @@
 import React from 'react'
-import "./VerticalServices.css"
 import {INITIAL_DATAPAGE} from "../../data/INITIAL_DATAPAGE.js"
 import {Link} from "react-router-dom";
+import "./styles-vertical-services.css"
 
 export default function VerticalServicesList(){
     return(

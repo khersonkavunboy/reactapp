@@ -3,7 +3,7 @@ import {BlockSentense} from "../block-sentense/BlockSentense";
 import {Popup} from "../popup/Popup.jsx";
 import {OrderClient} from "../order-client/OrderClient";
 import {INITIAL_DATAPAGE} from "../../data/INITIAL_DATAPAGE";
-import "./Sentense.css"
+import "./styles-sentense.css"
 
 export const Sentense = () => {
     const [openPopup, setOpenPopup] = useState(false);
@@ -15,7 +15,7 @@ export const Sentense = () => {
     };
 
     return (
-        <>
+        <div className="flexContainerSentense">
             <div className="divTitle">
                 <h1>{ category.nameCategory }</h1>
             </div>
@@ -35,6 +35,6 @@ export const Sentense = () => {
             <Popup openPopup={openPopup} setOpenPopup={setOpenPopup} title="Order client" >
                 <OrderClient/>
             </Popup>
-        </>
+        </div>
     );
 };

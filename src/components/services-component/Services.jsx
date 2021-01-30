@@ -1,7 +1,7 @@
 import React, {useContext, useEffect, useState} from 'react'
 import Button from '@material-ui/core/Button';
 import AddIcon from '@material-ui/icons/Add';
-import "./Services.css"
+import "./styles-services.css"
 import {Popup} from "../popup/Popup";
 import {AddEditService} from "./AddEditService";
 import CloseIcon from "@material-ui/icons/Close";

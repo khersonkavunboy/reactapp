@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import { NavLink } from 'react-router-dom';
-import "./HorizontalMenu.css"
+import "./styles-horizontal-menu.css"
 import MenuIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';
 
