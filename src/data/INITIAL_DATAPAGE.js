@@ -64,8 +64,7 @@ export const INITIAL_DATAPAGE = {
         { id:1, src: image1 },
         { id:2, src: image2 },
         { id:3, src: image3 },
-        { id:4, src: image1 },
-        // { id:4, src: 'https://www.uaewave.com/wp-content/uploads/2019/05/IMG-Worlds-of-Adventure-Dubai-Landmarks.jpg' },
+        { id:4, src: image1 }
     ],
 
     "columns":[
@@ -84,6 +83,40 @@ export const INITIAL_DATAPAGE = {
         { id: 2, fullName: 'Snow Snow', numberPhone: 'wefnlkewnflkwen', dateTime: Date.now(), service:"Боулинг", duration:'1 hours' },
         { id: 3, fullName: 'Snow Snow', numberPhone: '382282842871', dateTime: Date.now(), service:"Боулинг", duration:'1 hours' },
         { id: 4, fullName: 'Snow Snow', numberPhone: '382282842871', dateTime: Date.now(), service:"Боулинг", duration:'1 hours' },
+    ],
+
+
+    "services": [
+        {
+            "id": 15,
+            "nameService": "wefjbwejfk2123",
+            "duration": "jbewfjkewb",
+            "price": "bewjkfb"
+        },
+        {
+            "id": 16,
+            "nameService": "fewjkfewbewfwefe243",
+            "duration": "jkfebfwejkb",
+            "price": "jkbfewjfbe"
+        },
+        {
+            "id": 17,
+            "nameService": "efjkwebfwfqwq",
+            "duration": "newlkfnw",
+            "price": "nkelwfwkel"
+        },
+        {
+            "id": 18,
+            "nameService": "efjkwebf1232",
+            "duration": "newlkfnw",
+            "price": "nkelwfwkel"
+        },
+        {
+            "id": 20,
+            "nameService": "ewfnejwkf123123n",
+            "duration": "enwkfewklf",
+            "price": "ewflkn"
+        }
     ]
 
 
