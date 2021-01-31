@@ -17,11 +17,11 @@ export default function App() {
                 <Router>
                     <HorizontalMenu/>
                     <Switch>
-                        <Route exact path={'/'} component={MainPages}/>
-                        <Route exact path="/Provider" component={Provider}/>
-                        <Route exact path="/PagesViewClient" component={PagesViewClient}/>
-                        <Route exact path="/PagesViewProvider" component={PagesViewProvider}/>
-                        <Route exact path="/Sentences/:nameCategory" component={Sentense}/>
+                        <Route exact path={"/"} component={MainPages}/>
+                        <Route  path={"/Provider"} component={Provider}/>
+                        <Route  path={"/PagesViewClient"} component={PagesViewClient}/>
+                        <Route  path={"/PagesViewProvider"} component={PagesViewProvider}/>
+                        <Route  path={"/Sentences/:nameCategory"} component={Sentense}/>
                     </Switch>
                 </Router>
             </ServiceState>

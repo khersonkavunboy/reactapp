@@ -54,6 +54,9 @@
     text-shadow: 0 0 5px black;
 }
 
+
+
+
 @media (max-width: 768px) {
     .flexContainer{
         display: flex;
@@ -61,8 +64,45 @@
     }
 }
 
+@media (min-width: 768px) {
+    .flexContainer {
+        width: 70%;
+        display: flex;
+        margin: 30px 0 30px 0;
+    }
+}
 
-@media (max-width:1335px) {
+
+@media (min-width:910px) {
+    .flexContainer {
+        width: 80%;
+    }
+
+    .titleRecomendation{
+        font-size: 25px;
+    }
+
+    .textRecommTop{
+        font-size: 25px;
+    }
+
+    .containerBlock{
+        width: 90px;
+        height: 90px;
+        margin: 30px 10px 100px 20px;
+    }
+
+    .imageSizeRecommendation{
+        width: 90px;
+        height: 90px;
+        border-radius: 10px;
+    }
+}
+
+
+
+
+@media (min-width:1335px) {
     .flexContainer {
         width: 95%;
     }
@@ -70,12 +110,15 @@
 
 
 @media (min-width:1600px) {
+    .flexContainer {
+        width: 90%;
+    }
     .titleRecomendation{
-        font-size: 40px;
+        font-size: 35px;
     }
 
     .textRecommTop{
-        font-size: 40px;
+        font-size: 35px;
     }
 
     .containerBlock{
@@ -93,27 +136,93 @@
 }
 
 
-@media (min-width:1700px) {
-    .flexContainer {
-        width: 80%;
-        margin-left: 20px;
-    }
-}
-
-
 @media screen and (min-width: 1900px) {
-    .flexContainer {
-        width: 85%;
-        margin-left: 20px;
-    }
-}
-
-@media  (min-width: 2100px) {
     .flexContainer {
         width: 90%;
         margin-left: 20px;
     }
+
+    .titleRecomendation{
+        font-size: 30px;
+    }
+
+    .textRecommTop{
+        font-size: 30px;
+    }
+
+    .containerBlock{
+        width: 100px;
+        height: 100px;
+        margin: 30px 10px 100px 20px;
+    }
+
+    .imageSizeRecommendation{
+        width: 100px;
+        height: 100px;
+        border-radius: 10px;
+    }
 }
+
+
+@media screen and (min-width: 2000px) {
+    .flexContainer {
+        width: 95%;
+        margin-left: 20px;
+    }
+
+    .titleRecomendation{
+        font-size: 30px;
+    }
+
+    .textRecommTop{
+        font-size: 30px;
+    }
+
+    .containerBlock{
+        width: 100px;
+        height: 100px;
+        margin: 30px 10px 100px 20px;
+    }
+
+    .imageSizeRecommendation{
+        width: 100px;
+        height: 100px;
+        border-radius: 10px;
+    }
+}
+
+
+
+
+@media  (min-width: 2200px) {
+    .flexContainer {
+        width: 95%;
+        margin-left: 20px;
+    }
+
+    .titleRecomendation{
+        font-size: 35px;
+    }
+
+    .textRecommTop{
+        font-size: 35px;
+    }
+
+    .containerBlock{
+        width: 125px;
+        height: 125px;
+        margin: 30px 10px 100px 20px;
+    }
+
+    .imageSizeRecommendation{
+        width: 125px;
+        height: 125px;
+        border-radius: 10px;
+    }
+}
+
+
+
 
 @media  (min-width: 2400px) {
     .flexContainer {

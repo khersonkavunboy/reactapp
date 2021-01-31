@@ -13,7 +13,7 @@ export const SliderShow = (props) => {
     slidesToShow: 1,
     slidesToScroll: 1,
     draggable:true,
-    // autoplay: true,
+    autoplay: true,
     autoplaySpeed: 2000,
     pauseOnHover: true,
     arrows:true
@@ -23,9 +23,9 @@ export const SliderShow = (props) => {
       <div className="sliderContent">
         <Slider {...settings}>
             {
-                 props.pictures.map((element, key) => (
-                     <img key={key} src={element.src} alt='picture'/>
-                 ))
+                props.pictures.map((element, key) => (
+                    <img key={key} src={element.src} alt='picture'/>
+                ))
             }
         </Slider>
       </div>

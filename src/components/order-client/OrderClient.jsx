@@ -1,21 +1,13 @@
-import React, {useRef, useState} from 'react';
-import {Button,  makeStyles} from "@material-ui/core";
+import React, {useState} from 'react';
+import {Button} from "@material-ui/core";
 import {Autocomplete} from "@material-ui/lab";
 import {MuiSelect} from '../ui-components/MuiSelect';
 import TextField from "@material-ui/core/TextField";
 import {INITIAL_DATAPAGE} from "../../data/INITIAL_DATAPAGE";
+import {makeStylesOrderClient} from "./makeStylesOrderClient";
 import "./style-order-client.css"
 
 
-export const makeStylesPopup = makeStyles((theme) => ({
-    root: {
-        '& .MuiFormControl-fullWidth':{ width:370,},
-        '& .MuiAutocomplete-inputRoot[class*="MuiInput-root"] .MuiAutocomplete-input:first-child':{
-             padding: 20,
-            margin:5
-        },
-    },
-}));
 
 const INITIAL_STATE_ORDER_CLIENT = {
     fullName: '',
@@ -26,7 +18,7 @@ const INITIAL_STATE_ORDER_CLIENT = {
 };
 
 export const OrderClient = () => {
-    const styles = makeStylesPopup();
+    const styles = makeStylesOrderClient();
     const [orderClient, setOrderClient] = useState(INITIAL_STATE_ORDER_CLIENT);
     const [inputValue, setInputValue] = useState('');
     const {fullName, numberPhone, dateTime, duration, serviceNameId} = orderClient;
@@ -88,8 +80,12 @@ export const OrderClient = () => {
                     <input id="duration" placeholder="Enter duration" value={duration} type="text" name="duration"
                         onChange={e => onInputChange(e)}/>
                 </div>
-                <div><Button variant="contained" size="large" color="primary" style={{width: 250}}
-                            type="submit">Recording</Button></div>
+
+                <div>
+                    <Button variant="contained" size="large" color="primary" style={{width: 250}}
+                            type="submit">Recording
+                    </Button>
+                </div>
             </div>
         </form>
     );
